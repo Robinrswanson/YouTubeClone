@@ -28,8 +28,16 @@
     margin-right: 24px;
 }
 
+.hamburger-menu:hover{
+    cursor: pointer;
+}
+
 .youtube-logo{
     height: 20px;
+}
+
+.youtube-logo:hover{
+    cursor: pointer;
 }
 
 .middle-section{
@@ -66,18 +74,32 @@
     margin-right: 10px;
 }
 
+.search-button:hover,
+.voice-search-button:hover {
+    background-color: rgb(230, 230, 230);
+}
+
 .search-button, 
 .voice-search-button,
-.upload-icon-container {
+.upload-icon-container,
+.notification-icon-containter,
+.youtube-apps-container,
+.profile-container,
+.youtube-logo-container {
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
+    cursor: pointer;
 }
 
 .search-button .tooltip,
 .voice-search-button .tooltip,
-.upload-icon-container .tooltip{
+.upload-icon-container .tooltip,
+.notification-icon-containter .tooltip,
+.youtube-apps-container .tooltip,
+.profile-container .tooltip,
+.youtube-logo-container .tooltip {
     font-family: Roboto, Arial;
     position: absolute;
     background-color: gray;
@@ -97,7 +119,11 @@
 
 .search-button:hover .tooltip,
 .voice-search-button:hover .tooltip, 
-.upload-icon-container:hover .tooltip{
+.upload-icon-container:hover .tooltip,
+.notification-icon-containter:hover .tooltip,
+.youtube-apps-container:hover .tooltip,
+.profile-container:hover .tooltip,
+.youtube-logo-container:hover .tooltip {
     opacity: 1;
 }
 
